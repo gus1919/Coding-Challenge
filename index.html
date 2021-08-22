@@ -4,27 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>JavaScript Quiz</title>
+    <title>Coding Challenge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Stylesheets and reset -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-
+<!-- Javascript links, deferred to run at the end -->
+    <script defer src="questions.js"></script>
     <script defer src="script.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <div><a href="./highscores.html">High Scores</a></div>
+        <div><a href="highscores.html">High Scores</a></div>
         <div>Time Remaining: <span id="timer">60</span></div>
     </div>
     <div class="main">
         <div id="start-page">
-            <h1>Timed Coding Challenge</h1>
-            <br><br>
+            <h1>Timed Coding Challenge</h1> <br>
             <p>In this challenge, you have 60 seconds to answer 4 questions 
                 about JavaScript.  Be careful, wrong answers subtract 10 
                 seconds from your time.</p>
-            <br><br>
             <button id="start" class="btn" onclick="startGame()">Start</button>
         </div>
 
@@ -37,9 +37,9 @@
         </div>
 
         <div id="results-page" class="hide">
-            <h2>All done!</h2>
+            <h2>Congratulations! Challenge completed!</h2>
             <p>Your final score is <span id="final-score"></span>/50</p>
-            <label>Enter your initials: </label>
+            <label>Enter your name: </label>
             <input type="text" id="initials" size="6">
             <button id="submit-highscore" class="btn submit-btn" onclick="handleSubmit()">Submit Score</button>
         </div>
